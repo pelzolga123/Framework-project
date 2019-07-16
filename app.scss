@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa:400,600,700|Dancing+Script:400,700|Indie+Flower|Mountains+of+Christmas:400,700&display=swap');
+
+
+$mint-color:#78c2ad;
+$pink-color:#f3969a;
+$white-color:#fff;
+$search-color:#5a5a5a;
+$nav-hover:#888888;
+$icon-color:#f7f7f9;
+$warning-color:#ffce67;
+$dangere-color:#ff7851;
+$success-color:#56cc9d;
+$focus-color:#F4FCFB; 
+
+
+$funny-font: 'Mountains of Christmas', cursive;
+$italic-font: 'Dancing Script', cursive;
+$regular-font: 'Comfortaa', cursive;
+
+
+
+@mixin navigation-ul{
+    @include navigation-li();
+    list-style-type: none;
+    margin:0;
+    padding:0;
+
+}
+@mixin navigation-li{
+    padding: 5px;
+    float: left;
+    margin: 15px;
+    font-family: $funny-font;
+    font-size: 28px;
+}
+@mixin navigation{
+    top:0;
+    height:60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position:sticky;
+    width: 100%;
+    margin-bottom: 15px;
+    box-shadow:0px 0px 5px 2px rgba(63, 150, 191, 0.4);
+}
+@mixin icons{
+    color:$icon-color;
+    border: 1px solid $icon-color;
+    margin: 5px;
+    padding: 10px 15px;
+    font-size: 25px;
+    opacity: 0.7;
+}
+@mixin input-style($width){
+    padding: 10px;
+    margin: 5px;
+    border-radius: 20px;
+    border: none;
+    width:$width;
+    font-family: $funny-font;
+    box-shadow:0px 0px 5px 2px rgba(63, 150, 191, 0.4);
+    
+}
+@mixin text-color{
+    .mint-text{
+        color:$mint-color;
+    }
+    .pink-text{
+        color:$pink-color;
+    }
+    .warning-text{
+        color:$warning-color;
+    }
+    .dangere-text{
+        color:$dangere-color;
+    }
+    .success-text{
+        color:$success-color;
+    }
+}
+@mixin fonts-headers-ps{
+    .h1{
+        font-size:50px;
+        font-weight: 700; 
+    }
+    .h2{
+        font-size:44px; 
+        font-weight: 700; 
+    }
+    .h3{
+        font-size:38px; 
+        font-weight: 700; 
+    }
+    .h4{
+        font-size:32px; 
+        font-weight: 700; 
+    }
+    .h5{
+        font-size:26px; 
+        font-weight: 700; 
+    }
+    .h6{
+        font-size:20px; 
+        font-weight: 700; 
+    }
+    .paragraph{
+        font-size: 16px;
+        font-weight: 400; 
+    }
+}
+@media(max-width: 992px){
+    .mint-navbar{
+        .nav-button{
+            display:none;
+        }
+        .navbar-bars{
+            display:flex;
+        }
+        .search-bar{
+            input{
+                display: none;
+            }
+            button{
+                display:none;
+            }
+        }
+    }
+}
+@media(min-width: 993px){
+    .mint-navbar{
+        .navbar-bars{
+            display:none;
+        }
+    }
+}
+body{
+    margin:0;
+    padding:0;
+    @include fonts-headers-ps();
+    @include text-color();
+}
+.regular-font{
+    font-family:$regular-font;
+}
+.input-field-sm{
+    @include input-style(20%);  
+}
+.input-field-lg{
+    @include input-style(40%);  
+}
+.search-bar{
+    justify-content: flex-end;
+}
+input:focus{
+    background-color: $focus-color;
+}
+.input-div{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 5px;
+}
+.input-label{
+    font-family: $italic-font;
+    font-size:20px;
+}
+.mint-navbar{
+    @include navigation();
+    background-color:$mint-color;
+    ul{
+        @include navigation-ul();
+        li{
+            @include navigation-li();
+            a{
+                text-decoration: none;
+                color:$white-color;
+            }
+            a:hover{
+                color:$nav-hover;
+            }
+
+        }
+    }
+    .search-bar{
+        input{
+            @include input-style(100%);
+        } 
+        padding: 20px;
+        display:flex;
+        width:30%;
+    }
+    .navbar-bars{
+        @include icons();
+    }
+
+}
+.pink-navbar{
+    @include navigation();
+    background-color:$pink-color;
+    ul{
+        @include navigation-ul();
+        li{
+            @include navigation-li();
+            a{
+                text-decoration: none;
+                color:$white-color;
+            }
+            a:hover{
+                color:$nav-hover;
+            }
+
+        }
+    }
+}
+
