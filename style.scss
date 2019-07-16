@@ -1,0 +1,177 @@
+$primary: #78c2ad;
+$secondary: #f3969a;
+$success: #56cc9d;
+$info: #6cc3d5;
+$warning: #ffce67;
+$danger: #ff7851;
+$link: #ffffff;
+$dark: #18181d;
+$list-group-bg: #ffffff;
+$list-group-border: 1px solid lightgrey;
+$border-radius: 0.4rem;
+$letter_color: #888888;
+$padding-default: 0.5rem 1rem;
+$padding-lg: 0.75rem 1.5rem;
+$padding-sm: 0.35rem 0.7rem;
+$margin-default: 0.5rem 0.5rem;
+$font-size-lg: 1.3rem;
+$font-family: "Montserrat", -apple-system, system-ui, BlinkMacSystemFont,
+  "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+.btn {
+  padding: $padding-default;
+  margin: $margin-default;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  vertical-align: center;
+  color: white;
+  border: 1px solid transparent;
+  background-color: grey;
+  border-radius: $border-radius;
+  font-size: 1rem;
+  background: grey;
+}
+.btn:focus,
+.btn:active,
+.btn:hover {
+  opacity: 1.25;
+}
+.btn-primary {
+  background-color: $primary;
+}
+
+.btn-secondary {
+  background-color: $secondary;
+}
+.btn-success {
+  background-color: $success;
+}
+.btn-info {
+  background-color: $info;
+}
+.btn-warning {
+  background-color: $warning;
+}
+.btn-danger {
+  background-color: $danger;
+}
+.btn-link {
+  background-color: $link;
+}
+.btn-lg {
+  padding: $padding-lg;
+  font-size: $font-size-lg;
+}
+.btn-sm {
+  padding: $padding-sm;
+}
+.list-group {
+  background-color: $list-group-bg;
+  border-radius: $border-radius;
+  a {
+    text-decoration: none;
+    color: #888888 !important;
+  }
+}
+.list-group-item {
+  display: block;
+  padding: 10px 15px;
+  border: $list-group-border;
+  margin-bottom: -1px;
+  &.active {
+    background-color: #78c2ad;
+    color: #ffffff;
+  }
+  &.active:hover {
+    background-color: #78c2ad;
+  }
+  &:hover {
+    background-color: #f8f9fa;
+    color: black;
+  }
+}
+
+.table {
+  display: table;
+  border-spacing: 0;
+
+  width: 100%;
+  max-width: 100%;
+  font-family: $font-family;
+  font-size: 1rem;
+  th,
+  td {
+    display: table-cell;
+    text-align: left;
+    padding: 20px 10px;
+    border: 1px solid transparent;
+  }
+}
+
+@mixin table_styling($property, $default: false) {
+  @if $default {
+    background-color: silver;
+  } @else {
+    background-color: $property;
+    td,
+    th {
+      color: #ffffff !important;
+    }
+  }
+}
+@mixin table_hover($default: false) {
+  @if $default {
+    background-color: silver;
+  } @else {
+    color: $letter_color;
+  }
+}
+
+.table-primary {
+  @include table_styling($primary);
+}
+.table-secondary {
+  @include table_styling($secondary);
+}
+
+.table-success {
+  @include table_styling($success);
+}
+.table-danger {
+  @include table_styling($danger);
+}
+.table-warning {
+  @include table_styling($warning);
+}
+.table-info {
+  @include table_styling($info);
+}
+.table-light {
+  @include table_styling($link);
+  td,
+  th {
+    color: #888888 !important;
+  }
+}
+.table-dark {
+  @include table_styling($dark);
+}
+.table-active {
+  background-color: lightgrey;
+  opacity: 0.75;
+}
+
+.table-hover {
+  > tbody > tr:hover {
+    opacity: 0.75;
+    td,
+    th {
+      cursor: pointer;
+    }
+  }
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
