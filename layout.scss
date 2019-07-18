@@ -1,0 +1,45 @@
+
+@mixin cols(){
+    display:grid;
+}
+
+@mixin block-row($row-start, $row-end){
+    
+    @if $row-start == '0' {
+        grid-row:#{$row-end};
+    }
+    @else if $row-end == '0' {
+        grid-row:#{$row-start};
+    }
+    @else{
+        grid-row: #{$row-start/$row-end}; 
+    }
+}
+@mixin block-col($col-start, $col-end){
+    @if $col-start == '0' {
+        grid-column:#{$col-end};
+    }
+    @else if $col-end == '0' {
+        grid-column:#{$col-start};
+    }
+    @else{
+        grid-column:#{$col-start/$col-end};
+    }
+}
+.container{
+ @include cols();
+}
+
+@for $i from 0 through 12 {
+    @for $j from 0 through 12 {
+    .col-#{$i}-#{$j} {
+        @include block-col(#{$i},#{$j});
+    }
+    .row-#{$i}-#{$j} {
+        @include block-row(#{$i},#{$j}); 
+      }
+  }
+}
+
+
+
