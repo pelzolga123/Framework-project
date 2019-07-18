@@ -12,12 +12,9 @@ $dangere-color:#ff7851;
 $success-color:#56cc9d;
 $focus-color:#F4FCFB; 
 
-
 $funny-font: 'Mountains of Christmas', cursive;
 $italic-font: 'Dancing Script', cursive;
 $regular-font: 'Comfortaa', cursive;
-
-
 
 @mixin navigation-ul{
     @include navigation-li();
@@ -27,18 +24,13 @@ $regular-font: 'Comfortaa', cursive;
 
 }
 @mixin navigation-li{
-    padding: 5px;
-    float: left;
-    margin: 15px;
     font-family: $funny-font;
-    font-size: 28px;
 }
 @mixin navigation{
     top:0;
-    height:60px;
-    display: flex;
+    height:180px;
+    display: grid;
     align-items: center;
-    justify-content: space-between;
     position:sticky;
     width: 100%;
     margin-bottom: 15px;
@@ -82,35 +74,50 @@ $regular-font: 'Comfortaa', cursive;
 @mixin fonts-headers-ps{
     .h1{
         font-size:50px;
-        font-weight: 700; 
+        font-weight: 700;
+        padding:0;
+        margin: 10px; 
     }
     .h2{
         font-size:44px; 
-        font-weight: 700; 
+        font-weight: 700;
+        padding:0;
+        margin: 10px; 
     }
     .h3{
         font-size:38px; 
-        font-weight: 700; 
+        font-weight: 700;
+        padding:0;
+        margin: 10px; 
     }
     .h4{
         font-size:32px; 
         font-weight: 700; 
+        padding:0;
+        margin: 10px;
     }
     .h5{
         font-size:26px; 
         font-weight: 700; 
+        padding:0;
+        margin: 10px;
     }
     .h6{
         font-size:20px; 
         font-weight: 700; 
+        padding:0;
+        margin: 10px;
     }
     .paragraph{
         font-size: 16px;
         font-weight: 400; 
+        padding:0;
+        margin: 10px;
     }
 }
 @media(max-width: 992px){
     .mint-navbar{
+        height:80px!important;
         .nav-button{
             display:none;
         }
@@ -125,7 +132,21 @@ $regular-font: 'Comfortaa', cursive;
                 display:none;
             }
         }
+        .paragraph{
+            display:none;
+        }
+        figure{
+            display:none!important;
+        }
+       
+        .logo-nav-img{
+            width:125px;
+        }
     }
+
+}
+@media(max-width: 800px){
+   
 }
 @media(min-width: 993px){
     .mint-navbar{
@@ -139,6 +160,30 @@ body{
     padding:0;
     @include fonts-headers-ps();
     @include text-color();
+}
+.logo-nav-img{
+    width:225px;
+    height:auto;
+}
+.nav-img{
+    height:50px;
+    width:auto;
+}
+.pink-background{
+    background-color:#fce9e9;
+}
+figcaption{
+text-align:center;
+}
+figure{
+    margin:0;
+    display: flex;
+    flex-direction: column;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .regular-font{
     font-family:$regular-font;

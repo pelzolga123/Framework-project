@@ -2,6 +2,15 @@
 @mixin cols(){
     display:grid;
 }
+@function col-template($colnumber){
+    $result:null;
+    $width: (100%/$colnumber);
+    @for $i from 1 through $colnumber {
+        $result:append($result , $width) 
+        }
+    @return  $result;  
+}
+
 
 @mixin block-row($row-start, $row-end){
     
@@ -40,6 +49,14 @@
       }
   }
 }
+@for $i from 1 through 8{
+    .col-template-#{$i}{
+       grid-template-columns: col-template($i); 
+
+    }
+}
 
 
-
+img{
+    width: 20%;
+}

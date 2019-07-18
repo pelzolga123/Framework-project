@@ -1015,4 +1015,31 @@
 .row-12-12 {
   grid-row: 12/12; }
 
+.col-template-1 {
+  grid-template-columns: 100%; }
+
+.col-template-2 {
+  grid-template-columns: 50% 50%; }
+
+.col-template-3 {
+  grid-template-columns: 33.3333333333% 33.3333333333% 33.3333333333%; }
+
+.col-template-4 {
+  grid-template-columns: 25% 25% 25% 25%; }
+
+.col-template-5 {
+  grid-template-columns: 20% 20% 20% 20% 20%; }
+
+.col-template-6 {
+  grid-template-columns: 16.6666666667% 16.6666666667% 16.6666666667% 16.6666666667% 16.6666666667% 16.6666666667%; }
+
+.col-template-7 {
+  grid-template-columns: 14.2857142857% 14.2857142857% 14.2857142857% 14.2857142857% 14.2857142857% 14.2857142857% 14.2857142857%; }
+
+.col-template-8 {
+  grid-template-columns: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%; }
+
+img {
+  width: 20%; }
+
 /*# sourceMappingURL=layout.css.map */

@@ -1,13 +1,21 @@
 @import url("https://fonts.googleapis.com/css?family=Comfortaa:400,600,700|Dancing+Script:400,700|Indie+Flower|Mountains+of+Christmas:400,700&display=swap");
 @media (max-width: 992px) {
-  .mint-navbar .nav-button {
-    display: none; }
-  .mint-navbar .navbar-bars {
-    display: flex; }
-  .mint-navbar .search-bar input {
-    display: none; }
-  .mint-navbar .search-bar button {
-    display: none; } }
+  .mint-navbar {
+    height: 80px !important; }
+    .mint-navbar .nav-button {
+      display: none; }
+    .mint-navbar .navbar-bars {
+      display: flex; }
+    .mint-navbar .search-bar input {
+      display: none; }
+    .mint-navbar .search-bar button {
+      display: none; }
+    .mint-navbar .paragraph {
+      display: none; }
+    .mint-navbar figure {
+      display: none !important; }
+    .mint-navbar .logo-nav-img {
+      width: 125px; } }
 @media (min-width: 993px) {
   .mint-navbar .navbar-bars {
     display: none; } }
@@ -16,25 +24,39 @@ body {
   padding: 0; }
   body .h1 {
     font-size: 50px;
-    font-weight: 700; }
+    font-weight: 700;
+    padding: 0;
+    margin: 10px; }
   body .h2 {
     font-size: 44px;
-    font-weight: 700; }
+    font-weight: 700;
+    padding: 0;
+    margin: 10px; }
   body .h3 {
     font-size: 38px;
-    font-weight: 700; }
+    font-weight: 700;
+    padding: 0;
+    margin: 10px; }
   body .h4 {
     font-size: 32px;
-    font-weight: 700; }
+    font-weight: 700;
+    padding: 0;
+    margin: 10px; }
   body .h5 {
     font-size: 26px;
-    font-weight: 700; }
+    font-weight: 700;
+    padding: 0;
+    margin: 10px; }
   body .h6 {
     font-size: 20px;
-    font-weight: 700; }
+    font-weight: 700;
+    padding: 0;
+    margin: 10px; }
   body .paragraph {
     font-size: 16px;
-    font-weight: 400; }
+    font-weight: 400;
+    padding: 0;
+    margin: 10px; }
   body .mint-text {
     color: #78c2ad; }
   body .pink-text {
@@ -45,6 +67,30 @@ body {
     color: #ff7851; }
   body .success-text {
     color: #56cc9d; }
+
+.logo-nav-img {
+  width: 225px;
+  height: auto; }
+
+.nav-img {
+  height: 50px;
+  width: auto; }
+
+.pink-background {
+  background-color: #fce9e9; }
+
+figcaption {
+  text-align: center; }
+
+figure {
+  margin: 0;
+  display: flex;
+  flex-direction: column; }
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 .regular-font {
   font-family: "Comfortaa", cursive; }
@@ -85,30 +131,21 @@ input:focus {
 
 .mint-navbar {
   top: 0;
-  height: 60px;
-  display: flex;
+  height: 180px;
+  display: grid;
   align-items: center;
-  justify-content: space-between;
   position: sticky;
   width: 100%;
   margin-bottom: 15px;
   box-shadow: 0px 0px 5px 2px rgba(63, 150, 191, 0.4);
   background-color: #78c2ad; }
   .mint-navbar ul {
-    padding: 5px;
-    float: left;
-    margin: 15px;
     font-family: "Mountains of Christmas", cursive;
-    font-size: 28px;
     list-style-type: none;
     margin: 0;
     padding: 0; }
     .mint-navbar ul li {
-      padding: 5px;
-      float: left;
-      margin: 15px;
-      font-family: "Mountains of Christmas", cursive;
-      font-size: 28px; }
+      font-family: "Mountains of Christmas", cursive; }
       .mint-navbar ul li a {
         text-decoration: none;
         color: #fff; }
@@ -136,30 +173,21 @@ input:focus {
 
 .pink-navbar {
   top: 0;
-  height: 60px;
-  display: flex;
+  height: 180px;
+  display: grid;
   align-items: center;
-  justify-content: space-between;
   position: sticky;
   width: 100%;
   margin-bottom: 15px;
   box-shadow: 0px 0px 5px 2px rgba(63, 150, 191, 0.4);
   background-color: #f3969a; }
   .pink-navbar ul {
-    padding: 5px;
-    float: left;
-    margin: 15px;
     font-family: "Mountains of Christmas", cursive;
-    font-size: 28px;
     list-style-type: none;
     margin: 0;
     padding: 0; }
     .pink-navbar ul li {
-      padding: 5px;
-      float: left;
-      margin: 15px;
-      font-family: "Mountains of Christmas", cursive;
-      font-size: 28px; }
+      font-family: "Mountains of Christmas", cursive; }
       .pink-navbar ul li a {
         text-decoration: none;
         color: #fff; }
