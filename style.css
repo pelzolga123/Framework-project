@@ -242,14 +242,14 @@
   margin: 0 auto; }
 
 .footer-ul > li {
-  display: inline-block;
   float: left;
-  padding-right: 1rem; }
+  padding-right: 1.5rem; }
 
 .founded-a,
 .footer-a {
   text-decoration: none;
-  color: whitesmoke; }
+  color: whitesmoke;
+  padding-right: 1rem; }
 
 .email-input {
   margin: -1rem; }
@@ -259,5 +259,59 @@
 
 .guides-ul > li {
   font-size: 1.5rem; }
+
+.position-relative {
+  position: relative; }
+
+.position-absolute {
+  position: absolute; }
+
+.persons-decription {
+  padding-left: 1.5rem; }
+
+@media (max-width: 48rem) {
+  .btn {
+    padding: 0.35vh 0.75vw !important;
+    font-size: 1rem; } }
+.fs-it-btn-vertical-line {
+  text-align: center;
+  padding: 0.4vh 0.3vw 0.5vh 0.3vw;
+  margin-left: 0.1vw;
+  border-left: 1px solid #a2a2a2; }
+
+.footer-ul {
+  width: 80%;
+  list-style-image: url("./assets/images/rsz_bullet_point_red-512.png");
+  list-style-type: circle;
+  line-height: 2rem;
+  text-align: center; }
+
+.footer-div {
+  text-align: center; }
+
+.footer-ul-contact > li {
+  display: inline-block; }
+
+.grow {
+  transition: all 0.2s ease-in-out; }
+
+.grow:hover {
+  transform: scale(1.05);
+  background: whitesmoke;
+  box-shadow: 1px 2px lightgrey;
+  height: 100%; }
+
+.persons-p {
+  width: 95%; }
+
+.main-person > .img-person {
+  width: 150px !important;
+  height: 150px !important; }
+
+.jumpo-img {
+  width: 40%; }
+
+.guides-ul > a {
+  color: lightblue; }
 
 /*# sourceMappingURL=style.css.map */
