@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box; }
+
+.row {
+  width: 100%;
+  background-color: gray;
+  overflow: hidden; }
+
+.row:after {
+  display: table;
+  clear: both;
+  content: ""; }
+
+.row div:last-of-type {
+  margin-right: 0; }
+
+.col-1 {
+  width: calc(100% /12 - (10px * 0.9166666667));
+  float: left;
+  margin-right: 10px;
+  margin-top: 10px; }
+  @media (max-width: 48rem) {
+    .col-1 {
+      float: none;
+      width: 100%;
+      margin-right: 0; } }
+
+.col-2 {
+  width: calc(100% /6 - (10px * 0.8333333333));
+  float: left;
+  margin-right: 10px;
+  margin-top: 10px; }
+  @media (max-width: 48rem) {
+    .col-2 {
+      float: none;
+      width: 100%;
+      margin-right: 0; } }
+
+.col-3 {
+  width: calc(100% /4 - (10px * 0.75));
+  float: left;
+  margin-right: 10px;
+  margin-top: 10px; }
+  @media (max-width: 48rem) {
+    .col-3 {
+      float: none;
+      width: 100%;
+      margin-right: 0; } }
+
+.col-4 {
+  width: calc(100% /3 - (10px * 0.6666666667));
+  float: left;
+  margin-right: 10px;
+  margin-top: 10px; }
+  @media (max-width: 48rem) {
+    .col-4 {
+      float: none;
+      width: 100%;
+      margin-right: 0; } }
+
+.col-5 {
+  width: calc(100% /2.4 - (10px * 0.5833333333));
+  float: left;
+  margin-right: 10px;
+  margin-top: 10px; }
+  @media (max-width: 48rem) {
+    .col-5 {
+      float: none;
+      width: 100%;
+      margin-right: 0; } }
+
+.col-6 {
+  width: calc(100% /2 - (10px * 0.5));
+  float: left;
+  margin-right: 10px;
+  margin-top: 10px; }
+  @media (max-width: 48rem) {
+    .col-6 {
+      float: none;
+      width: 100%;
+      margin-right: 0; } }
+
+.col-7 {
+  width: calc(100% /1.7142857143 - (10px * 0.4166666667));
+  float: left;
+  margin-right: 10px;
+  margin-top: 10px; }
+  @media (max-width: 48rem) {
+    .col-7 {
+      float: none;
+      width: 100%;
+      margin-right: 0; } }
+
+.col-8 {
+  width: calc(100% /1.5 - (10px * 0.3333333333));
+  float: left;
+  margin-right: 10px;
+  margin-top: 10px; }
+  @media (max-width: 48rem) {
+    .col-8 {
+      float: none;
+      width: 100%;
+      margin-right: 0; } }
+
+.col-9 {
+  width: calc(100% /1.3333333333 - (10px * 0.25));
+  float: left;
+  margin-right: 10px;
+  margin-top: 10px; }
+  @media (max-width: 48rem) {
+    .col-9 {
+      float: none;
+      width: 100%;
+      margin-right: 0; } }
+
+.col-10 {
+  width: calc(100% /1.2 - (10px * 0.1666666667));
+  float: left;
+  margin-right: 10px;
+  margin-top: 10px; }
+  @media (max-width: 48rem) {
+    .col-10 {
+      float: none;
+      width: 100%;
+      margin-right: 0; } }
+
+.col-11 {
+  width: calc(100% /1.0909090909 - (10px * 0.0833333333));
+  float: left;
+  margin-right: 10px;
+  margin-top: 10px; }
+  @media (max-width: 48rem) {
+    .col-11 {
+      float: none;
+      width: 100%;
+      margin-right: 0; } }
+
+.col-12 {
+  width: calc(100% /1 - (10px * 0));
+  float: left;
+  margin-right: 10px;
+  margin-top: 10px; }
+  @media (max-width: 48rem) {
+    .col-12 {
+      float: none;
+      width: 100%;
+      margin-right: 0; } }
+
+[class*="col-"] {
+  background-color: lightblue; }
+
+/*# sourceMappingURL=testlayout.css.map */

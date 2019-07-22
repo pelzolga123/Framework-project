@@ -1,4 +1,23 @@
 @import url("https://fonts.googleapis.com/css?family=Comfortaa:400,600,700|Dancing+Script:400,700|Indie+Flower|Mountains+of+Christmas:400,700&display=swap");
+.container-width {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto; }
+
+.padding-div {
+  padding: 25px;
+  margin: 30px; }
+
+.padding-div-sm {
+  margin: 20px; }
+
+.link-styling {
+  text-decoration: none;
+  color: #fff; }
+
+.remove-bullets {
+  list-style: none; }
+
 @media (max-width: 992px) {
   .mint-navbar {
     height: 80px !important; }
@@ -10,13 +29,14 @@
       display: none; }
     .mint-navbar .search-bar button {
       display: none; }
-    .mint-navbar .paragraph {
-      display: none; }
     .mint-navbar figure {
       display: none !important; }
     .mint-navbar .logo-nav-img {
       width: 125px; } }
-@media (min-width: 993px) {
+@media (min-width: 900px) and (max-width: 1100px) {
+  .paragraph-nav {
+    display: none; } }
+@media (min-width: 899px) {
   .mint-navbar .navbar-bars {
     display: none; } }
 body {
@@ -57,6 +77,20 @@ body {
     font-weight: 400;
     padding: 0;
     margin: 10px; }
+  body .paragraph-big {
+    font-size: 20px;
+    font-weight: 400;
+    padding: 0;
+    margin: 10px; }
+  body .paragraph-nav {
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0;
+    margin: 10px; }
+  body .funny-font {
+    font-family: "Mountains of Christmas", cursive; }
+  body .italic {
+    font-family: "Dancing Script", cursive; }
   body .mint-text {
     color: #78c2ad; }
   body .pink-text {
@@ -67,17 +101,42 @@ body {
     color: #ff7851; }
   body .success-text {
     color: #56cc9d; }
-
-.logo-nav-img {
-  width: 225px;
-  height: auto; }
-
-.nav-img {
-  height: 50px;
-  width: auto; }
-
-.pink-background {
-  background-color: #fce9e9; }
+  body .white-color {
+    color: #fff; }
+  body .black-color {
+    color: #000; }
+  body .animate {
+    transform: rotate(-30deg); }
+  body .animate:hover {
+    transform: rotate(0deg);
+    transition: 0.5s;
+    transition-timing-function: ease-in; }
+  body .img-person {
+    width: 76px;
+    height: 76px;
+    border: 5px solid #78c2ad;
+    border-radius: 22px; }
+  body .logo-nav-img {
+    width: 225px;
+    height: auto; }
+  body .big-img {
+    width: 250px;
+    height: auto; }
+  body .nav-img {
+    height: 50px;
+    width: auto; }
+  body .img-negativ {
+    margin-top: -40px; }
+  body .pink-lipstick {
+    background-color: #cb0162; }
+  body .pink-razzamatazz {
+    background-color: #d90166; }
+  body .pink-camelot {
+    background-color: #872657; }
+  body .mint-green {
+    background-color: #255145; }
+  body .pink-color {
+    background-color: #f3969a; }
 
 figcaption {
   text-align: center; }
@@ -91,6 +150,9 @@ figure {
   display: flex;
   justify-content: center;
   align-items: center; }
+
+.center-grid {
+  text-align: center; }
 
 .regular-font {
   font-family: "Comfortaa", cursive; }
@@ -134,9 +196,7 @@ input:focus {
   height: 180px;
   display: grid;
   align-items: center;
-  position: sticky;
   width: 100%;
-  margin-bottom: 15px;
   box-shadow: 0px 0px 5px 2px rgba(63, 150, 191, 0.4);
   background-color: #78c2ad; }
   .mint-navbar ul {
@@ -176,9 +236,7 @@ input:focus {
   height: 180px;
   display: grid;
   align-items: center;
-  position: sticky;
   width: 100%;
-  margin-bottom: 15px;
   box-shadow: 0px 0px 5px 2px rgba(63, 150, 191, 0.4);
   background-color: #f3969a; }
   .pink-navbar ul {
