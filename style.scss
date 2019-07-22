@@ -284,6 +284,7 @@ $font-family: "Montserrat", -apple-system, system-ui, BlinkMacSystemFont,
 .footer-a {
   text-decoration: none;
   color: whitesmoke;
+  padding-right: 1rem;
 }
 .email-input {
   margin: -1rem;
@@ -294,16 +295,7 @@ $font-family: "Montserrat", -apple-system, system-ui, BlinkMacSystemFont,
 .guides-ul > li {
   font-size: 1.5rem;
 }
-.featured {
-  height: 50vh;
-}
-.featured-img {
-  height: auto;
-  position: absolute;
-  top: -20px;
-  left: 30px;
-  transform: rotate(-10deg);
-}
+
 .position-relative {
   position: relative;
 }
@@ -319,9 +311,6 @@ $grid-breakpoint: 48rem !default;
   .btn {
     padding: 0.35vh 0.75vw !important;
     font-size: 1rem;
-  }
-  .featured img {
-    width: 70% !important;
   }
 }
 .fs-it-btn-vertical-line {
@@ -354,4 +343,14 @@ $grid-breakpoint: 48rem !default;
 }
 .persons-p {
   width: 95%;
+}
+.main-person > .img-person {
+  width: 150px !important;
+  height: 150px !important;
+}
+.jumpo-img {
+  width: 40%;
+}
+.guides-ul > a {
+  color: lightblue;
 }
