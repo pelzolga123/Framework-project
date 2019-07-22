@@ -260,4 +260,23 @@
 .guides-ul > li {
   font-size: 1.5rem; }
 
+.featured {
+  height: 100vh; }
+
+.featured-img {
+  height: auto;
+  position: absolute;
+  top: -20px;
+  left: 30px;
+  transform: rotate(-10deg); }
+
+.position-relative {
+  position: relative; }
+
+.position-absolute {
+  position: absolute; }
+
+.persons-decription {
+  padding-left: 1.5rem; }
+
 /*# sourceMappingURL=style.css.map */
