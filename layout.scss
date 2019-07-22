@@ -9,6 +9,7 @@
         $result:append($result , $width) 
         }
     @return  $result;  
+
 }
 
 
@@ -23,6 +24,7 @@
     @else{
         grid-row: #{$row-start/$row-end}; 
     }
+   
 }
 @mixin block-col($col-start, $col-end){
     @if $col-start == '0' {
@@ -34,8 +36,9 @@
     @else{
         grid-column:#{$col-start/$col-end};
     }
+
 }
-.container{
+.container, .container-nav{
  @include cols();
 }
 
@@ -47,16 +50,36 @@
     .row-#{$i}-#{$j} {
         @include block-row(#{$i},#{$j}); 
       }
+      
   }
 }
 @for $i from 1 through 8{
     .col-template-#{$i}{
        grid-template-columns: col-template($i); 
-
+       
     }
+    
 }
 
+@media (max-width:766px){
 
-img{
-    width: 20%;
+.container{
+    display: flex;
+    flex-direction: column;
+    }
+
 }
+@media (min-width:767px) and (max-width:1100px){
+
+        .sm-col{
+            width:50%;
+        }
+        .xs-col{
+            width:45%;
+        }
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+ }

@@ -11,6 +11,11 @@ $warning-color:#ffce67;
 $dangere-color:#ff7851;
 $success-color:#56cc9d;
 $focus-color:#F4FCFB; 
+$pink-lipstick:#cb0162;
+$pink-razzamatazz:#d90166;
+$pink-camelot:#872657;
+$mint-green:#255145;
+$black-color:#000;
 
 $funny-font: 'Mountains of Christmas', cursive;
 $italic-font: 'Dancing Script', cursive;
@@ -31,9 +36,7 @@ $regular-font: 'Comfortaa', cursive;
     height:180px;
     display: grid;
     align-items: center;
-    position:sticky;
     width: 100%;
-    margin-bottom: 15px;
     box-shadow:0px 0px 5px 2px rgba(63, 150, 191, 0.4);
 }
 @mixin icons{
@@ -54,6 +57,16 @@ $regular-font: 'Comfortaa', cursive;
     box-shadow:0px 0px 5px 2px rgba(63, 150, 191, 0.4);
     
 }
+@mixin animation{
+    .animate{
+        transform: rotate(-30deg);
+    }
+    .animate:hover{
+        transform: rotate(0deg);
+        transition: 0.5s;
+        transition-timing-function: ease-in;
+    }
+}
 @mixin text-color{
     .mint-text{
         color:$mint-color;
@@ -70,7 +83,38 @@ $regular-font: 'Comfortaa', cursive;
     .success-text{
         color:$success-color;
     }
+    .white-color{
+        color:$white-color;
+    }
+    .black-color{
+        color:$black-color;
+    }
+    
 }
+@mixin images{
+.img-person{
+    width:76px;
+    height:76px;
+    border: 5px solid $mint-color;
+    border-radius: 22px;
+}
+.logo-nav-img{
+    width:225px;
+    height:auto;
+}
+.big-img{
+    width:250px;
+    height:auto;
+}
+.nav-img{
+    height:50px;
+    width:auto;
+}
+.img-negativ{
+    margin-top: -40px;
+}
+}
+
 @mixin fonts-headers-ps{
     .h1{
         font-size:50px;
@@ -114,6 +158,47 @@ $regular-font: 'Comfortaa', cursive;
         padding:0;
         margin: 10px;
     }
+    .paragraph-big{
+        font-size:20px; 
+        font-weight: 400; 
+        padding:0;
+        margin: 10px;
+    }
+    .paragraph-nav{
+        font-size: 16px;
+        font-weight: 400; 
+        padding:0;
+        margin: 10px;
+    }
+    .funny-font{
+        font-family: $funny-font;
+    }
+    .italic{
+        font-family:$italic-font;
+    }
+}
+@mixin lists{
+
+}
+.container-width{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.padding-div{
+    padding:25px;
+    margin:30px;
+}
+.padding-div-sm{
+    margin:20px;
+}
+
+.link-styling{
+    text-decoration:none;
+    color:$white-color;
+}
+.remove-bullets{
+    list-style: none;
 }
 @media(max-width: 992px){
     .mint-navbar{
@@ -132,9 +217,7 @@ $regular-font: 'Comfortaa', cursive;
                 display:none;
             }
         }
-        .paragraph{
-            display:none;
-        }
+       
         figure{
             display:none!important;
         }
@@ -145,14 +228,33 @@ $regular-font: 'Comfortaa', cursive;
     }
 
 }
-@media(max-width: 800px){
-   
+@media (min-width: 900px) and (max-width:1100px){
+    .paragraph-nav{
+        display:none;
+    }
 }
-@media(min-width: 993px){
+@media(min-width: 899px){
     .mint-navbar{
         .navbar-bars{
             display:none;
         }
+    }
+}
+@mixin backgrounds{
+    .pink-lipstick{
+        background-color:$pink-lipstick;
+    }
+    .pink-razzamatazz{
+        background-color: $pink-razzamatazz;
+    }
+    .pink-camelot{
+        background-color: $pink-camelot;
+    }
+    .mint-green{
+        background-color:$mint-green;
+    }
+    .pink-color{
+        background-color:$pink-color;
     }
 }
 body{
@@ -160,18 +262,12 @@ body{
     padding:0;
     @include fonts-headers-ps();
     @include text-color();
+    @include animation();
+    @include images();
+    @include backgrounds();
 }
-.logo-nav-img{
-    width:225px;
-    height:auto;
-}
-.nav-img{
-    height:50px;
-    width:auto;
-}
-.pink-background{
-    background-color:#fce9e9;
-}
+
+
 figcaption{
 text-align:center;
 }
@@ -184,6 +280,9 @@ figure{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.center-grid{
+    text-align:center;
 }
 .regular-font{
     font-family:$regular-font;
@@ -200,6 +299,7 @@ figure{
 input:focus{
     background-color: $focus-color;
 }
+
 .input-div{
     display: flex;
     flex-direction: column;
