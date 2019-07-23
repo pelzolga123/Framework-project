@@ -34,7 +34,8 @@ $font-family: "Montserrat", -apple-system, system-ui, BlinkMacSystemFont,
 .btn:focus,
 .btn:active,
 .btn:hover {
-  opacity: 1.25;
+  opacity: 0.95;
+  box-shadow: 1px 2px lightgrey;
 }
 .btn-primary {
   background-color: $primary;
@@ -65,6 +66,15 @@ $font-family: "Montserrat", -apple-system, system-ui, BlinkMacSystemFont,
 .btn-sm {
   padding: $padding-sm;
 }
+
+$grid-breakpoint: 48rem !default;
+@media (max-width: $grid-breakpoint) {
+  .btn {
+    padding: 0.35vh 0.75vw !important;
+    font-size: 1rem;
+  }
+}
+
 .list-group {
   background-color: $list-group-bg;
   border-radius: $border-radius;
@@ -170,12 +180,6 @@ $font-family: "Montserrat", -apple-system, system-ui, BlinkMacSystemFont,
     }
   }
 }
-
-.img-fluid {
-  max-width: 100%;
-  height: auto;
-  padding-right: 0.2rem;
-}
 .w-100 {
   width: 100%;
 }
@@ -205,11 +209,11 @@ $font-family: "Montserrat", -apple-system, system-ui, BlinkMacSystemFont,
 }
 .justify-content-center {
   display: flex;
-  justify-items: center;
+  justify-content: center;
 }
 .align-items-center {
   display: flex;
-  justify-content: center;
+  align-items: center;
 }
 .text-align-center {
   text-align: center;
@@ -257,24 +261,30 @@ $font-family: "Montserrat", -apple-system, system-ui, BlinkMacSystemFont,
   margin-bottom: 3rem;
 }
 
+.bg-danger {
+  background-color: #d33a2c;
+}
+
+.bg-success {
+  background-color: #56cc9d;
+}
+.mx-auto {
+  margin: 0 auto;
+}
+.position-relative {
+  position: relative;
+}
+.position-absolute {
+  position: absolute;
+}
+
+// for site styling
 .more-links {
   height: 150px;
 }
 .person {
   padding-bottom: 1.5rem;
   padding-top: 1.5rem;
-}
-.bg-danger {
-  background-color: #d33a2c;
-}
-.text-white {
-  color: whitesmoke;
-}
-.bg-success {
-  background-color: #56cc9d;
-}
-.mx-auto {
-  margin: 0 auto;
 }
 .footer-ul > li {
   float: left;
@@ -283,7 +293,6 @@ $font-family: "Montserrat", -apple-system, system-ui, BlinkMacSystemFont,
 .founded-a,
 .footer-a {
   text-decoration: none;
-  color: whitesmoke;
   padding-right: 1rem;
 }
 .email-input {
@@ -296,23 +305,10 @@ $font-family: "Montserrat", -apple-system, system-ui, BlinkMacSystemFont,
   font-size: 1.5rem;
 }
 
-.position-relative {
-  position: relative;
-}
-.position-absolute {
-  position: absolute;
-}
 .persons-decription {
   padding-left: 1.5rem;
 }
-$grid-breakpoint: 48rem !default;
 
-@media (max-width: $grid-breakpoint) {
-  .btn {
-    padding: 0.35vh 0.75vw !important;
-    font-size: 1rem;
-  }
-}
 .fs-it-btn-vertical-line {
   text-align: center;
   padding: 0.4vh 0.3vw 0.5vh 0.3vw;
@@ -337,20 +333,12 @@ $grid-breakpoint: 48rem !default;
 }
 .grow:hover {
   transform: scale(1.05);
-  background: whitesmoke;
+  background: lightpink;
   box-shadow: 1px 2px lightgrey;
   height: 100%;
 }
-.persons-p {
-  width: 95%;
-}
+
 .main-person > .img-person {
   width: 150px !important;
   height: 150px !important;
-}
-.jumpo-img {
-  width: 40%;
-}
-.guides-ul > a {
-  color: lightblue;
 }
