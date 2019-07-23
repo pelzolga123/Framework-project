@@ -1,0 +1,26 @@
+@media (max-width: 766px) {
+  .seriosly-btn {
+    display: none; }
+
+  .remove-top-150 {
+    margin-top: 10px !important; }
+
+  .h3-center-responsive {
+    font-size: 30px !important; } }
+@media (min-width: 900px) and (max-width: 1100px) {
+  .paragraph-nav {
+    display: none; } }
+.img-negativ {
+  margin-top: -40px; }
+
+.top-150 {
+  margin-top: 200px; }
+
+.top-30 {
+  margin-top: 30px; }
+
+@media (max-width: 900px) {
+  .seriosly-btn {
+    display: none; } }
+
+/*# sourceMappingURL=smashing-magasine.css.map */

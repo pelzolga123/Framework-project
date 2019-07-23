@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,yBAAwB;EAEpB,aAAa;IACT,OAAO,EAAC,IAAI;;EAEhB,eAAe;IACX,UAAU,EAAC,eAAc;;EAE7B,qBAAqB;IACjB,SAAS,EAAC,eAAc;AAIhC,iDAAgD;EAC5C,cAAc;IACV,OAAO,EAAC,IAAI;AAGhB,YAAY;EACR,UAAU,EAAE,KAAK;;AAGrB,QAAQ;EACJ,UAAU,EAAC,KAAK;;AAEpB,OAAO;EACH,UAAU,EAAC,IAAI;;AAEnB,yBAAyB;EACrB,aAAa;IACT,OAAO,EAAC,IAAI",
+"sources": ["smashing-magasine.scss"],
+"names": [],
+"file": "smashing-magasine.css"
+}

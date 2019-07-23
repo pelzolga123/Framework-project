@@ -1054,16 +1054,7 @@
 
   .logo-nav-img {
     width: 170px !important;
-    margin-top: 0 !important; }
-
-  .seriosly-btn {
-    display: none; }
-
-  .remove-top-150 {
-    margin-top: 0 !important; }
-
-  .h3-center-responsive {
-    font-size: 30px !important; } }
+    margin-top: 0 !important; } }
 @media (min-width: 767px) and (max-width: 849px) {
   .sm-col {
     width: 50%; }
