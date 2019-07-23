@@ -11,16 +11,6 @@
 .top-30 {
   margin-top: 30px; }
 
-.container-width {
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto; }
-
-.container-width-bigger {
-  width: 95%;
-  margin-left: auto;
-  margin-right: auto; }
-
 .padding-div {
   padding: 25px;
   margin: 30px; }
@@ -36,19 +26,20 @@
   list-style: none; }
 
 @media (max-width: 992px) {
-  .mint-navbar {
-    height: 80px !important; }
-    .mint-navbar .nav-button {
+  .navbar {
+    height: 80px !important;
+    background-color: #78c2ad; }
+    .navbar .nav-button {
       display: none; }
-    .mint-navbar .navbar-bars {
+    .navbar .navbar-bars {
       display: flex; }
-    .mint-navbar .search-bar input {
+    .navbar .search-bar input {
       display: none; }
-    .mint-navbar .search-bar button {
+    .navbar .search-bar button {
       display: none; }
-    .mint-navbar figure {
+    .navbar figure {
       display: none !important; }
-    .mint-navbar .logo-nav-img {
+    .navbar .logo-nav-img {
       width: 125px; }
 
   .h1 {
@@ -78,7 +69,7 @@
   .paragraph-nav {
     display: none; } }
 @media (min-width: 899px) {
-  .mint-navbar .navbar-bars {
+  .navbar .navbar-bars {
     display: none; } }
 body {
   margin: 0;
@@ -132,6 +123,8 @@ body {
     font-family: "Mountains of Christmas", cursive; }
   body .italic {
     font-family: "Dancing Script", cursive; }
+  body .regular {
+    font-family: "Comfortaa", cursive; }
   body .mint-text {
     color: #78c2ad; }
   body .pink-text {
@@ -238,7 +231,7 @@ input:focus {
   font-family: "Dancing Script", cursive;
   font-size: 20px; }
 
-.mint-navbar {
+.navbar {
   top: 0;
   height: 180px;
   display: grid;
@@ -246,23 +239,23 @@ input:focus {
   width: 100%;
   box-shadow: 0px 0px 5px 2px rgba(63, 150, 191, 0.4);
   background-color: #78c2ad; }
-  .mint-navbar ul {
+  .navbar ul {
     font-family: "Mountains of Christmas", cursive;
     list-style-type: none;
     margin: 0;
     padding: 0; }
-    .mint-navbar ul li {
+    .navbar ul li {
       font-family: "Mountains of Christmas", cursive; }
-      .mint-navbar ul li a {
+      .navbar ul li a {
         text-decoration: none;
         color: #fff; }
-      .mint-navbar ul li a:hover {
+      .navbar ul li a:hover {
         color: #888888; }
-  .mint-navbar .search-bar {
+  .navbar .search-bar {
     padding: 20px;
     display: flex;
     width: 30%; }
-    .mint-navbar .search-bar input {
+    .navbar .search-bar input {
       padding: 10px;
       margin: 5px;
       border-radius: 20px;
@@ -270,33 +263,12 @@ input:focus {
       width: 100%;
       font-family: "Mountains of Christmas", cursive;
       box-shadow: 0px 0px 5px 2px rgba(63, 150, 191, 0.4); }
-  .mint-navbar .navbar-bars {
+  .navbar .navbar-bars {
     color: #f7f7f9;
     border: 1px solid #f7f7f9;
     margin: 5px;
     padding: 10px 15px;
     font-size: 25px;
     opacity: 0.7; }
-
-.pink-navbar {
-  top: 0;
-  height: 180px;
-  display: grid;
-  align-items: center;
-  width: 100%;
-  box-shadow: 0px 0px 5px 2px rgba(63, 150, 191, 0.4);
-  background-color: #f3969a; }
-  .pink-navbar ul {
-    font-family: "Mountains of Christmas", cursive;
-    list-style-type: none;
-    margin: 0;
-    padding: 0; }
-    .pink-navbar ul li {
-      font-family: "Mountains of Christmas", cursive; }
-      .pink-navbar ul li a {
-        text-decoration: none;
-        color: #fff; }
-      .pink-navbar ul li a:hover {
-        color: #888888; }
 
 /*# sourceMappingURL=app.css.map */

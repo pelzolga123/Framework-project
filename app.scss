@@ -187,20 +187,11 @@ $regular-font: 'Comfortaa', cursive;
     .italic{
         font-family:$italic-font;
     }
+    .regular{
+        font-family:$regular-font;
+    }
 }
-@mixin lists{
 
-}
-.container-width{
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-}
-.container-width-bigger{
-    width: 95%;
-    margin-left: auto;
-    margin-right: auto; 
-}
 .padding-div{
     padding:25px;
     margin:30px;
@@ -217,8 +208,9 @@ $regular-font: 'Comfortaa', cursive;
     list-style: none;
 }
 @media(max-width: 992px){
-    .mint-navbar{
+    .navbar{
         height:80px!important;
+        background-color: $mint-color;
         .nav-button{
             display:none;
         }
@@ -274,7 +266,7 @@ $regular-font: 'Comfortaa', cursive;
     }
 }
 @media(min-width: 899px){
-    .mint-navbar{
+    .navbar{
         .navbar-bars{
             display:none;
         }
@@ -356,7 +348,7 @@ input:focus{
     font-family: $italic-font;
     font-size:20px;
 }
-.mint-navbar{
+.navbar{
     @include navigation();
     background-color:$mint-color;
     ul{
@@ -386,22 +378,5 @@ input:focus{
     }
 
 }
-.pink-navbar{
-    @include navigation();
-    background-color:$pink-color;
-    ul{
-        @include navigation-ul();
-        li{
-            @include navigation-li();
-            a{
-                text-decoration: none;
-                color:$white-color;
-            }
-            a:hover{
-                color:$nav-hover;
-            }
 
-        }
-    }
-}
 
