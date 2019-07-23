@@ -9,8 +9,10 @@
 
 @mixin block-row($row-start, $row-end) {
   @if $row-start == "0" {
+    $row-end:1;  
     grid-row: #{$row-end};
   } @else if $row-end == "0" {
+    $row-start:1;  
     grid-row: #{$row-start};
   } @else {
     grid-row: #{$row-start/$row-end};
@@ -18,8 +20,10 @@
 }
 @mixin block-col($col-start, $col-end) {
   @if $col-start == "0" {
+    $col-end:1;  
     grid-column: #{$col-end};
   } @else if $col-end == "0" {
+    $col-start:1; 
     grid-column: #{$col-start};
   } @else {
     grid-column: #{$col-start/$col-end};
