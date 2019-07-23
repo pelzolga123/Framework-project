@@ -267,9 +267,7 @@ $font-family: "Montserrat", -apple-system, system-ui, BlinkMacSystemFont,
 .bg-danger {
   background-color: #d33a2c;
 }
-.text-white {
-  color: whitesmoke;
-}
+
 .bg-success {
   background-color: #56cc9d;
 }
@@ -283,7 +281,6 @@ $font-family: "Montserrat", -apple-system, system-ui, BlinkMacSystemFont,
 .founded-a,
 .footer-a {
   text-decoration: none;
-  color: whitesmoke;
   padding-right: 1rem;
 }
 .email-input {
@@ -337,20 +334,15 @@ $grid-breakpoint: 48rem !default;
 }
 .grow:hover {
   transform: scale(1.05);
-  background: whitesmoke;
+  background: lightpink;
   box-shadow: 1px 2px lightgrey;
   height: 100%;
 }
-.persons-p {
-  width: 95%;
-}
+
 .main-person > .img-person {
   width: 150px !important;
   height: 150px !important;
 }
 .jumpo-img {
   width: 40%;
-}
-.guides-ul > a {
-  color: lightblue;
 }

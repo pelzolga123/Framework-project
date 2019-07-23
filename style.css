@@ -232,9 +232,6 @@
 .bg-danger {
   background-color: #d33a2c; }
 
-.text-white {
-  color: whitesmoke; }
-
 .bg-success {
   background-color: #56cc9d; }
 
@@ -248,7 +245,6 @@
 .founded-a,
 .footer-a {
   text-decoration: none;
-  color: whitesmoke;
   padding-right: 1rem; }
 
 .email-input {
@@ -297,12 +293,9 @@
 
 .grow:hover {
   transform: scale(1.05);
-  background: whitesmoke;
+  background: lightpink;
   box-shadow: 1px 2px lightgrey;
   height: 100%; }
-
-.persons-p {
-  width: 95%; }
 
 .main-person > .img-person {
   width: 150px !important;
@@ -310,8 +303,5 @@
 
 .jumpo-img {
   width: 40%; }
-
-.guides-ul > a {
-  color: lightblue; }
 
 /*# sourceMappingURL=style.css.map */
