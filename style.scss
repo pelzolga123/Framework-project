@@ -34,7 +34,8 @@ $font-family: "Montserrat", -apple-system, system-ui, BlinkMacSystemFont,
 .btn:focus,
 .btn:active,
 .btn:hover {
-  opacity: 1.25;
+  opacity: 0.95;
+  box-shadow: 1px 2px lightgrey;
 }
 .btn-primary {
   background-color: $primary;
@@ -179,12 +180,6 @@ $grid-breakpoint: 48rem !default;
     }
   }
 }
-
-.img-fluid {
-  max-width: 100%;
-  height: auto;
-  padding-right: 0.2rem;
-}
 .w-100 {
   width: 100%;
 }
@@ -214,11 +209,11 @@ $grid-breakpoint: 48rem !default;
 }
 .justify-content-center {
   display: flex;
-  justify-items: center;
+  justify-content: center;
 }
 .align-items-center {
   display: flex;
-  justify-content: center;
+  align-items: center;
 }
 .text-align-center {
   text-align: center;
@@ -266,13 +261,6 @@ $grid-breakpoint: 48rem !default;
   margin-bottom: 3rem;
 }
 
-.more-links {
-  height: 150px;
-}
-.person {
-  padding-bottom: 1.5rem;
-  padding-top: 1.5rem;
-}
 .bg-danger {
   background-color: #d33a2c;
 }
@@ -291,6 +279,13 @@ $grid-breakpoint: 48rem !default;
 }
 
 // for site styling
+.more-links {
+  height: 150px;
+}
+.person {
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
+}
 .footer-ul > li {
   float: left;
   padding-right: 1.5rem;
