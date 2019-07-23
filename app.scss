@@ -196,6 +196,11 @@ $regular-font: 'Comfortaa', cursive;
     margin-left: auto;
     margin-right: auto;
 }
+.container-width-bigger{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto; 
+}
 .padding-div{
     padding:25px;
     margin:30px;
@@ -236,8 +241,32 @@ $regular-font: 'Comfortaa', cursive;
         .logo-nav-img{
             width:125px;
         }
+        
     }
-
+    .h1{
+        font-size:42px!important;
+    }
+    .h2{
+        font-size:36px!important; 
+    }
+    .h3{
+        font-size:30px!important;  
+    }
+    .h4{
+        font-size:26px!important; 
+    }
+    .h5{
+        font-size:18px!important; 
+    }
+    .h6{
+        font-size:14px!important; 
+    }
+    .paragraph{
+        font-size: 12px!important;
+    }
+    .padding-div{
+        padding:5px!important;
+    }
 }
 @media (min-width: 900px) and (max-width:1100px){
     .paragraph-nav{
