@@ -65,6 +65,15 @@ $font-family: "Montserrat", -apple-system, system-ui, BlinkMacSystemFont,
 .btn-sm {
   padding: $padding-sm;
 }
+
+$grid-breakpoint: 48rem !default;
+@media (max-width: $grid-breakpoint) {
+  .btn {
+    padding: 0.35vh 0.75vw !important;
+    font-size: 1rem;
+  }
+}
+
 .list-group {
   background-color: $list-group-bg;
   border-radius: $border-radius;
@@ -281,13 +290,6 @@ $font-family: "Montserrat", -apple-system, system-ui, BlinkMacSystemFont,
   position: absolute;
 }
 
-@media (max-width: $grid-breakpoint) {
-  .btn {
-    padding: 0.35vh 0.75vw !important;
-    font-size: 1rem;
-  }
-}
-
 // for site styling
 .footer-ul > li {
   float: left;
@@ -311,7 +313,6 @@ $font-family: "Montserrat", -apple-system, system-ui, BlinkMacSystemFont,
 .persons-decription {
   padding-left: 1.5rem;
 }
-$grid-breakpoint: 48rem !default;
 
 .fs-it-btn-vertical-line {
   text-align: center;
