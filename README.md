@@ -16,3 +16,6 @@ CSS Grid System, animation, SASS, box-shadow, positioning
 # Demo Project View Link
 
 The project is live at [Design Your Own Grid-Basec Framework - Smashing Magazine Clone](https://raw.githack.com/pelzolga123/Framework-project/develop/index.html)
+
+# Grid logic
+![Grid Scheme](https://github.com/pelzolga123/Framework-project/blob/develop/assets/scheme.png)
