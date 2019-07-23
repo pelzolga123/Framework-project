@@ -274,6 +274,21 @@ $font-family: "Montserrat", -apple-system, system-ui, BlinkMacSystemFont,
 .mx-auto {
   margin: 0 auto;
 }
+.position-relative {
+  position: relative;
+}
+.position-absolute {
+  position: absolute;
+}
+
+@media (max-width: $grid-breakpoint) {
+  .btn {
+    padding: 0.35vh 0.75vw !important;
+    font-size: 1rem;
+  }
+}
+
+// for site styling
 .footer-ul > li {
   float: left;
   padding-right: 1.5rem;
@@ -293,23 +308,11 @@ $font-family: "Montserrat", -apple-system, system-ui, BlinkMacSystemFont,
   font-size: 1.5rem;
 }
 
-.position-relative {
-  position: relative;
-}
-.position-absolute {
-  position: absolute;
-}
 .persons-decription {
   padding-left: 1.5rem;
 }
 $grid-breakpoint: 48rem !default;
 
-@media (max-width: $grid-breakpoint) {
-  .btn {
-    padding: 0.35vh 0.75vw !important;
-    font-size: 1rem;
-  }
-}
 .fs-it-btn-vertical-line {
   text-align: center;
   padding: 0.4vh 0.3vw 0.5vh 0.3vw;
@@ -342,7 +345,4 @@ $grid-breakpoint: 48rem !default;
 .main-person > .img-person {
   width: 150px !important;
   height: 150px !important;
-}
-.jumpo-img {
-  width: 40%;
 }
