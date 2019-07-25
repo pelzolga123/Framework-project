@@ -1,0 +1,507 @@
+@import url("https://fonts.googleapis.com/css?family=Comfortaa:400,600,700|Dancing+Script:400,700|Indie+Flower|Mountains+of+Christmas:400,700&display=swap");
+.max-width {
+  width: 100%; }
+
+.absolut-pos {
+  position: absolute; }
+
+.padding-div {
+  padding: 25px;
+  margin: 30px; }
+
+.padding-div-sm {
+  margin: 20px; }
+
+.link-styling {
+  text-decoration: none;
+  color: #fff; }
+
+.remove-bullets {
+  list-style: none; }
+
+@media (max-width: 992px) {
+  .navbar {
+    height: 80px !important;
+    background-color: #78c2ad; }
+    .navbar .nav-button {
+      display: none; }
+    .navbar .navbar-bars {
+      display: flex; }
+    .navbar .search-bar input {
+      display: none; }
+    .navbar .search-bar button {
+      display: none; }
+    .navbar figure {
+      display: none !important; }
+    .navbar .logo-nav-img {
+      width: 125px; }
+
+  .h1 {
+    font-size: 42px !important; }
+
+  .h2 {
+    font-size: 36px !important; }
+
+  .h3 {
+    font-size: 30px !important; }
+
+  .h4 {
+    font-size: 26px !important; }
+
+  .h5 {
+    font-size: 18px !important; }
+
+  .h6 {
+    font-size: 14px !important; }
+
+  .paragraph {
+    font-size: 12px !important; }
+
+  .padding-div {
+    padding: 5px !important; } }
+@media (min-width: 899px) {
+  .navbar .navbar-bars {
+    display: none; } }
+body {
+  margin: 0;
+  padding: 0; }
+  body .h1 {
+    font-size: 50px;
+    font-weight: 700;
+    padding: 0;
+    margin: 10px; }
+  body .h2 {
+    font-size: 44px;
+    font-weight: 700;
+    padding: 0;
+    margin: 10px; }
+  body .h3 {
+    font-size: 38px;
+    font-weight: 700;
+    padding: 0;
+    margin: 10px; }
+  body .h4 {
+    font-size: 32px;
+    font-weight: 700;
+    padding: 0;
+    margin: 10px; }
+  body .h5 {
+    font-size: 26px;
+    font-weight: 700;
+    padding: 0;
+    margin: 10px; }
+  body .h6 {
+    font-size: 20px;
+    font-weight: 700;
+    padding: 0;
+    margin: 10px; }
+  body .paragraph {
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0;
+    margin: 10px; }
+  body .paragraph-big {
+    font-size: 20px;
+    font-weight: 400;
+    padding: 0;
+    margin: 10px; }
+  body .paragraph-nav {
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0;
+    margin: 10px; }
+  body .funny-font {
+    font-family: "Mountains of Christmas", cursive; }
+  body .italic {
+    font-family: "Dancing Script", cursive; }
+  body .regular {
+    font-family: "Comfortaa", cursive; }
+  body .mint-text {
+    color: #78c2ad; }
+  body .pink-text {
+    color: #f3969a; }
+  body .warning-text {
+    color: #ffce67; }
+  body .danger-text {
+    color: #ff7851; }
+  body .success-text {
+    color: #56cc9d; }
+  body .white-color {
+    color: #fff; }
+  body .black-color {
+    color: #000; }
+  body .animate {
+    transform: rotate(-30deg); }
+  body .animate:hover {
+    transform: rotate(0deg);
+    transition: 0.5s;
+    transition-timing-function: ease-in; }
+  body .img-person {
+    width: 76px;
+    height: 76px;
+    border: 5px solid #78c2ad;
+    border-radius: 22px; }
+  body .logo-nav-img {
+    width: 225px;
+    height: auto; }
+  body .big-img {
+    width: 250px;
+    height: auto; }
+  body .nav-img {
+    height: 50px;
+    width: auto; }
+  body .pink-lipstick {
+    background-color: #cb0162; }
+  body .pink-razzamatazz {
+    background-color: #d90166; }
+  body .pink-camelot {
+    background-color: #872657; }
+  body .mint-green {
+    background-color: #255145; }
+  body .pink-color {
+    background-color: #f3969a; }
+
+figcaption {
+  text-align: center; }
+
+figure {
+  margin: 0;
+  display: flex;
+  flex-direction: column; }
+
+.regular-font {
+  font-family: "Comfortaa", cursive;
+  line-height: 1.3; }
+
+.input-field-sm {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 20px;
+  border: none;
+  width: 20%;
+  font-family: "Mountains of Christmas", cursive;
+  box-shadow: 0px 0px 5px 2px rgba(63, 150, 191, 0.4); }
+
+.input-field-lg {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 20px;
+  border: none;
+  width: 40%;
+  font-family: "Mountains of Christmas", cursive;
+  box-shadow: 0px 0px 5px 2px rgba(63, 150, 191, 0.4); }
+
+.search-bar {
+  justify-content: flex-end; }
+
+input:focus {
+  background-color: #f4fcfb; }
+
+.span-header {
+  background-color: #fff;
+  padding: 0.3em 0.4em;
+  line-height: 1.5em;
+  -webkit-box-decoration-break: clone; }
+
+.input-div {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin: 5px; }
+
+.input-label {
+  font-family: "Dancing Script", cursive;
+  font-size: 20px; }
+
+.navbar {
+  top: 0;
+  height: 180px;
+  display: grid;
+  align-items: center;
+  width: 100%;
+  box-shadow: 0px 0px 5px 2px rgba(63, 150, 191, 0.4);
+  background-color: #78c2ad; }
+  .navbar ul {
+    font-family: "Mountains of Christmas", cursive;
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
+    .navbar ul li {
+      font-family: "Mountains of Christmas", cursive; }
+      .navbar ul li a {
+        text-decoration: none;
+        color: #fff; }
+      .navbar ul li a:hover {
+        color: #888888; }
+  .navbar .search-bar {
+    padding: 20px;
+    display: flex;
+    width: 30%; }
+    .navbar .search-bar input {
+      padding: 10px;
+      margin: 5px;
+      border-radius: 20px;
+      border: none;
+      width: 100%;
+      font-family: "Mountains of Christmas", cursive;
+      box-shadow: 0px 0px 5px 2px rgba(63, 150, 191, 0.4); }
+  .navbar .navbar-bars {
+    color: #f7f7f9;
+    border: 1px solid #f7f7f9;
+    margin: 5px;
+    padding: 10px 15px;
+    font-size: 25px;
+    opacity: 0.7; }
+
+.mx-auto {
+  margin: 0 auto; }
+
+.position-relative {
+  position: relative; }
+
+.position-absolute {
+  position: absolute; }
+
+.pt-3 {
+  padding-top: 2rem; }
+
+.pb-3 {
+  padding-bottom: 2rem; }
+
+.pl-3 {
+  padding-left: 2rem; }
+
+.pr-3 {
+  padding-right: 2rem; }
+
+.m-5 {
+  margin-top: 3rem;
+  margin-bottom: 3rem; }
+
+.p-5 {
+  padding-top: 3rem;
+  padding-bottom: 3rem; }
+
+.pt-5 {
+  padding-top: 3rem; }
+
+.pb-5 {
+  padding-bottom: 3rem; }
+
+.pl-5 {
+  padding-left: 3rem; }
+
+.pr-5 {
+  padding-right: 3rem; }
+
+.p-3 {
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
+
+.w-100 {
+  width: 100%; }
+
+.w-50 {
+  width: 50%; }
+
+.d-flex {
+  display: flex; }
+
+.d-hidden {
+  display: hidden; }
+
+@media (min-width: 1200px) {
+  .d-lg-none {
+    display: none !important; } }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .d-md-none {
+    display: none !important; } }
+
+@media (min-width: 768px) {
+  .d-sm-none {
+    display: none !important; } }
+
+@media (max-width: 768px) {
+  .d-xs-none {
+    display: none !important; } }
+
+.d-column {
+  flex-direction: column; }
+
+.justify-content-start {
+  align-items: flex-start; }
+
+.justify-content-end {
+  justify-content: flex-end; }
+
+.justify-content-between {
+  justify-content: space-between; }
+
+.justify-content-center {
+  justify-content: center; }
+
+.align-items-center {
+  align-items: center; }
+
+.text-align-center {
+  text-align: center; }
+
+.btn {
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0.5rem;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  vertical-align: center;
+  color: #fff;
+  border: 1px solid transparent;
+  background-color: grey;
+  border-radius: 0.4rem;
+  font-size: 1rem;
+  background: grey; }
+
+.btn:focus,
+.btn:active,
+.btn:hover {
+  opacity: 0.95;
+  box-shadow: 1px 2px lightgrey; }
+
+.btn-primary {
+  background-color: #78c2ad; }
+
+.btn-secondary {
+  background-color: #f3969a; }
+
+.btn-success {
+  background-color: #56cc9d; }
+
+.btn-info {
+  background-color: #6cc3d5; }
+
+.btn-warning {
+  background-color: #ffce67; }
+
+.btn-danger {
+  background-color: #ff7851; }
+
+.btn-link {
+  background-color: #fff; }
+
+.btn-lg {
+  padding: 0.75rem 1.5rem;
+  font-size: 1.3rem; }
+
+.btn-sm {
+  padding: 0.35rem 0.7rem; }
+
+@media (max-width: 48rem) {
+  .btn {
+    padding: 0.35vh 0.75vw !important;
+    font-size: 1rem; } }
+.list-group {
+  background-color: #fff;
+  border-radius: 0.4rem; }
+  .list-group a {
+    text-decoration: none;
+    color: #888888 !important; }
+
+.list-group-item {
+  display: block;
+  padding: 10px 15px;
+  border: 1px solid lightgrey;
+  margin-bottom: -1px; }
+  .list-group-item.active {
+    background-color: #78c2ad;
+    color: #fff; }
+  .list-group-item.active:hover {
+    background-color: #78c2ad; }
+  .list-group-item:hover {
+    background-color: #f8f9fa;
+    color: #000; }
+
+.table {
+  display: table;
+  border-spacing: 0;
+  width: 100%;
+  max-width: 100%;
+  font-family: "Comfortaa", cursive;
+  font-size: 1rem; }
+  .table th,
+  .table td {
+    display: table-cell;
+    text-align: left;
+    padding: 20px 10px;
+    border: 1px solid transparent; }
+
+.table-primary {
+  background-color: #78c2ad; }
+  .table-primary td,
+  .table-primary th {
+    color: #fff !important; }
+
+.table-secondary {
+  background-color: #f3969a; }
+  .table-secondary td,
+  .table-secondary th {
+    color: #fff !important; }
+
+.table-success {
+  background-color: #56cc9d; }
+  .table-success td,
+  .table-success th {
+    color: #fff !important; }
+
+.table-danger {
+  background-color: #ff7851; }
+  .table-danger td,
+  .table-danger th {
+    color: #fff !important; }
+
+.table-warning {
+  background-color: #ffce67; }
+  .table-warning td,
+  .table-warning th {
+    color: #fff !important; }
+
+.table-info {
+  background-color: #6cc3d5; }
+  .table-info td,
+  .table-info th {
+    color: #fff !important; }
+
+.table-light {
+  background-color: #fff; }
+  .table-light td,
+  .table-light th {
+    color: #fff !important; }
+  .table-light td,
+  .table-light th {
+    color: #888888 !important; }
+
+.table-dark {
+  background-color: #18181d; }
+  .table-dark td,
+  .table-dark th {
+    color: #fff !important; }
+
+.table-active {
+  background-color: lightgrey;
+  opacity: 0.75; }
+
+.table-hover > tbody > tr:hover {
+  opacity: 0.75; }
+  .table-hover > tbody > tr:hover td,
+  .table-hover > tbody > tr:hover th {
+    cursor: pointer; }
+
+.m-0 {
+  margin: 0; }
+
+.bg-danger {
+  background-color: #d33a2c; }
+
+.bg-success {
+  background-color: #56cc9d; }
+
+/*# sourceMappingURL=app.css.map */
