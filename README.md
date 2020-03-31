@@ -3,7 +3,7 @@
 <img src="https://i.ibb.co/d0TfSZ6/framework-project.png" alt="framework-project" border="0">
 
 ## About The Project
-In this project, we design our own grid-based framework that is similar to Bootstrap, with its own 12-column design and classes for text, button, input, table, navbar styling, etc. We then used the framework to clone the famous design website: Smashing magazine.The sample website is available at [Smashing Magazine Homepage](https://smashingmagazine.com) and the cloned version can be viewed using the live link listed below.
+In this project, we design our own grid-based framework that is similar to Bootstrap, with its own 12-column design and classes for text, button, input, table, navbar styling, etc. We then used the framework to clone the famous design website: Smashing magazine. The sample website is available at [Smashing Magazine Homepage](https://smashingmagazine.com) and the cloned version can be viewed using the live link listed below.
 
 ### Grid logic
 ![Grid Scheme](https://github.com/pelzolga123/Framework-project/blob/develop/assets/scheme.png)
@@ -15,6 +15,14 @@ In this project, we design our own grid-based framework that is similar to Boots
 ### Built With
 * HTML5
 * SASS
+
+### Development
+
+* Clone project
+```
+git clone https://github.com/pelzolga123/Framework-project.git
+```
+* Open `index.html` file with a browser.
 
 ## Authors
 
